@@ -22,3 +22,6 @@ git push {-u} {remote} {branch} -> push commits repo+branch, -u saves settings
 
 
 Video that finally made things make sense: https://www.youtube.com/watch?v=DVRQoVRzMIY
+
+
+Historically I had used github as a sort of one-and-done deal (effectively an alternative submission location for assignments) but now I have a better understanding of its purpose and what each of the functionalities does when you're using github in a team.

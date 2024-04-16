@@ -1,0 +1,16 @@
+write full stack app in single language
+javascript written on server
+
+process.platform = current platform
+process.env = environment variable
+
+sync = blocking
+promise = async + nonblocking
+
+modules: javascript file that exports its code
+
+npm = node package manager
+
+This is reminding me of Flutter
+
+Covering basics video: https://www.youtube.com/watch?v=ENrzD9HAZK4
