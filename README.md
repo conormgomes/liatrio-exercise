@@ -2,12 +2,16 @@
 
 **4/15/24**
 
-Made github repo. (_I definitely need to watch some videos on good github practices_)
+Made github repo.
 
-Further setting up repo
+Further setting up repo:
 
 - Ensuring I'm using my personal account to push instead of my school account
 
 - Adding a .gitignore
 
-- Learning the proper workflow and usecases of using github
+- Unlearning past misuses of github and teaching myself how to properly use and take advantage of it
+
+
+Installed Node.js and began teaching myself javascript and Node specifically via YouTube videos
+
