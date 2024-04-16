@@ -1,0 +1,24 @@
+Remote = master version on github
+clone to get a copy of that locally -> (Does that create a repo?)
+commit marks a point of changes (checkpoint)
+push makes changes to remote repo
+pull updates local files with any changes
+merge combines a branch with main/master branch
+
+master should ALWAYS be functional so another branch is a copy at a certain point that can be messed with and then you merge later
+*a branch can be updated from main branch
+
+git init only used to make a repo for something that doesn't exist already? a clone does that job for something that already exists
+
+
+git clone {url}
+git add {file(s)} (-A for all)
+git status
+git commit -m "{message}"
+git checkout {-b} {name} -> switch branch, -b makes new branch
+git merge {branch} -> merge from chosen branch into current branch
+git remote add {name} {url} -> basically a keyword swap, name = url
+git push {-u} {remote} {branch} -> push commits repo+branch, -u saves settings
+
+
+Video that finally made things make sense: https://www.youtube.com/watch?v=DVRQoVRzMIY

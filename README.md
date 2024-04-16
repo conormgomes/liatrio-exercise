@@ -9,3 +9,5 @@ Further setting up repo
 - Ensuring I'm using my personal account to push instead of my school account
 
 - Adding a .gitignore
+
+- Learning the proper workflow and usecases of using github
