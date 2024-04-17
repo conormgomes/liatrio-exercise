@@ -11,6 +11,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build Docker image
+        working-directory: docker-container
         run: docker build . -t git-image
 
       - name: Log in to Docker
