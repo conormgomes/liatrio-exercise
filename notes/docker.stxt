@@ -1,0 +1,5 @@
+https://docs.docker.com/language/nodejs/containerize/
+
+Was pretty easily able to just follow this guide from Docker which fully set up my container. I had some problems at first but that was because I was inputting the wrong thing for 'What command do you want to use to start the app:'. Once it was up and running it was as easy as just copying and pasting my js files over.
+
+v21.7.3
