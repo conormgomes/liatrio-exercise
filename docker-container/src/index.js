@@ -30,4 +30,4 @@ app.get('/', async (request, response) => {
     response.json({message: "My name is Conor", timestamp: Date.now()});
 });
 
-app.listen(process.env.PORT || 3000, () => console.log('App available on http://localhost:3000'));
+app.listen(process.env.PORT || 80, () => console.log('App available on http://localhost:3000'));

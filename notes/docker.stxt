@@ -1,5 +1,14 @@
 https://docs.docker.com/language/nodejs/containerize/
 
+docker compose up --build {-d} //this starts the container, -d for run in background
+docker compose down //stop the container
+
 Was pretty easily able to just follow this guide from Docker which fully set up my container. I had some problems at first but that was because I was inputting the wrong thing for 'What command do you want to use to start the app:'. Once it was up and running it was as easy as just copying and pasting my js files over.
 
+docker build -t {tag} {directory} -> directory . for now
+docker tag {existing tag} {new tag}:{tagname}
+docker push {new tag}:{tagname}
+
 v21.7.3
+
+https://www.youtube.com/watch?v=SnSH8Ht3MIc
