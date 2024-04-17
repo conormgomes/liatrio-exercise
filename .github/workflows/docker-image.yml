@@ -24,3 +24,6 @@ jobs:
         run: |
           docker tag git-image conormgomes/liatrio-exercise-docker:0
           docker push conormgomes/liatrio-exercise-docker:0
+
+      - name: run tests
+        uses: liatrio/github-actions/apprentice-action@master
