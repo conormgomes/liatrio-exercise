@@ -43,3 +43,6 @@ Wasted some time trying to alter the actions .yaml to have different steps depen
 Today I will pass those tests.
 
 Added lines to actually run the js code in actions.
+Took a few tries, but I eventually landed on the correct way to get the endpoint up and running.
+
+Changing the actions .yaml again to use version of the apprentice-action without the unimplemented test.
