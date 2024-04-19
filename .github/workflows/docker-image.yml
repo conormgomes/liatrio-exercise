@@ -28,5 +28,9 @@ jobs:
           docker tag git-image conormgomes/liatrio-exercise-docker:$TIME_NOW
           docker push conormgomes/liatrio-exercise-docker:$TIME_NOW
 
+      - name: Run js code to open endpoint
+        working-directory: src
+        run: node .
+
       - name: run tests
         uses: liatrio/github-actions/apprentice-action@master

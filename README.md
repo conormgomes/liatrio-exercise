@@ -34,3 +34,12 @@ Have enough knowledge from YouTube to attempt it. So far I can build and push to
 Goal today is to refine the GitHub actions to correctly label Docker image versions and also to behave differently on a main branch push vs a manual run. I also need to figure out why all 7 tests are failing with an ECONNREFUSED.
 
 Spent a while trying to find a way to iterate a GitHub repo variable without success. Decided to just use date/time to tag Docker images.
+
+Wasted some time trying to alter the actions .yaml to have different steps depending on the trigger. Didn't work, so I think I would have to create a different .yaml file. Was more of an idea for fun than functionality so I scrapped it.
+
+
+**4/19/24**
+
+Today I will pass those tests.
+
+Added lines to actually run the js code in actions.
