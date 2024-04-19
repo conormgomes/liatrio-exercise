@@ -11,7 +11,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build Docker image
-        working-directory: docker-container
         run: docker build . -t git-image
 
       - name: Log in to Docker
@@ -29,7 +28,6 @@ jobs:
           docker push conormgomes/liatrio-exercise-docker:$TIME_NOW
 
       - name: Run js code to open endpoint
-        working-directory: liatrio-exercise
         run: docker run -dp 127.0.0.1:80:80 git-image
 
       - name: Run tests
