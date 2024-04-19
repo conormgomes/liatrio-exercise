@@ -1,7 +1,7 @@
 name: Test, Build, and Push Docker image
 
 on:
-  [workflow_dispatch, push]
+  [workflow_dispatch]
 
 jobs:
   build:
@@ -21,9 +21,7 @@ jobs:
         run: docker login -u $docker_user -p $docker_pass
 
       - name: Generate tag number
-        run: |
-          echo "TIME_NOW=$(date +%s)" >> $GITHUB_ENV
-          echo $TIME_NOW
+        run: echo "TIME_NOW=$(date +%s)" >> $GITHUB_ENV
 
       - name: Push to Docker Hub
         run: |
@@ -32,3 +30,16 @@ jobs:
 
       - name: run tests
         uses: liatrio/github-actions/apprentice-action@master
+
+on:
+  [push]
+
+jobs:
+  testing:
+    runs-on: ubunto-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      -name: Testing
+        run: date +%s
