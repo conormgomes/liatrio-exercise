@@ -28,7 +28,7 @@ jobs:
           docker push conormgomes/liatrio-exercise-docker:$TIME_NOW
 
       - name: Run js code to open endpoint
-        run: docker run -dp 127.0.0.1:80:80 git-image
+        run: docker run -dp 172.17.0.1:80:80 git-image
 
       - name: Run tests
         uses: liatrio/github-actions/apprentice-action@master
