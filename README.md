@@ -27,3 +27,8 @@ Learning how to do the three steps required using GitHub Actions
 Went back a bit to better understand how Docker builds/images/containers work before I start writing my actions .yaml file.
 
 Have enough knowledge from YouTube to attempt it. So far I can build and push to Docker Hub automatically. Now I hope that it passes the tests.
+
+
+**4/18/24**
+
+Goal today is to refine the GitHub actions to correctly label Docker image versions and also to behave differently on a main branch push vs a manual run. I also need to figure out why all 7 tests are failing with an ECONNREFUSED.

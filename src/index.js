@@ -24,10 +24,10 @@ writeFile(path, JSON.stringify(vals, null, 2), (error) => {
 })
 */
 
-app.get('/', async (request, response) => {
+app.get('172.17.0.1', async (request, response) => {
 
     //response.send(await readFile('./msg.json', 'utf8'));
     response.json({message: "My name is Conor", timestamp: Date.now()});
 });
 
-app.listen(process.env.PORT || 80, () => console.log('App available on http://localhost:3000'));
+app.listen(80, () => console.log('App available on http://localhost:80'));
