@@ -37,9 +37,9 @@ on:
 jobs:
   testing:
     runs-on: ubuntu-latest
-
+    
     steps:
       - uses: actions/checkout@v3
 
-      -name: Testing
+      - name: Testing
         run: date +%s
