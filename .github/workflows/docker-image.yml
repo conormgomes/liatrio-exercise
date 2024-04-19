@@ -30,7 +30,7 @@ jobs:
 
       - name: Run js code to open endpoint
         working-directory: liatrio-exercise
-        run: docker compose up --build
+        run: docker run -dp 127.0.0.1:80:80 git-image
 
       - name: Run tests
         uses: liatrio/github-actions/apprentice-action@master
