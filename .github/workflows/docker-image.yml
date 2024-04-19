@@ -21,12 +21,14 @@ jobs:
         run: docker login -u $docker_user -p $docker_pass
 
       - name: Generate tag number
-        run: echo "TIME_NOW=$(date +%s)" >> $GITHUB_ENV
+        run: |
+          echo "TIME_NOW=$(date +%s)" >> $GITHUB_ENV
+          echo $TIME_NOW
 
       - name: Push to Docker Hub
         run: |
-          docker tag git-image conormgomes/liatrio-exercise-docker:$(TIME_NOW)
-          docker push conormgomes/liatrio-exercise-docker:$(TIME_NOW)
+          docker tag git-image conormgomes/liatrio-exercise-docker:$TIME_NOW
+          docker push conormgomes/liatrio-exercise-docker:$TIME_NOW
 
       - name: run tests
         uses: liatrio/github-actions/apprentice-action@master
