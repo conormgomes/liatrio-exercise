@@ -1,7 +1,7 @@
 name: Test, Build, and Push Docker image
 
 on:
-  [workflow_dispatch]
+  [push, workflow_dispatch]
 
 jobs:
   build:
@@ -30,16 +30,3 @@ jobs:
 
       - name: run tests
         uses: liatrio/github-actions/apprentice-action@master
-
-on:
-  [push]
-
-jobs:
-  testing:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Testing
-        run: date +%s
