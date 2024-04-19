@@ -32,3 +32,5 @@ Have enough knowledge from YouTube to attempt it. So far I can build and push to
 **4/18/24**
 
 Goal today is to refine the GitHub actions to correctly label Docker image versions and also to behave differently on a main branch push vs a manual run. I also need to figure out why all 7 tests are failing with an ECONNREFUSED.
+
+Spent a while trying to find a way to iterate a GitHub repo variable without success. Decided to just use date/time to tag Docker images.

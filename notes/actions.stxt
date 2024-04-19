@@ -1,0 +1,19 @@
+automates testing + delivery
+
+.yaml info:
+	- event = trigger (keyword = on: )
+	- jobs = work to be done (triggered by event)
+	- runs-on = runner (container environment to run code)
+
+
+
+
+https://www.youtube.com/watch?v=mFFXuXjVgkU
+https://www.youtube.com/watch?v=R8_veQiYBjI
+
+name: optional description
+on:
+	{event}:
+		jobs: {do something}
+
+needs: for dependencies 
