@@ -26,6 +26,8 @@ jobs:
         run: |
           docker tag git-image conormgomes/liatrio-exercise-docker:$TIME_NOW
           docker push conormgomes/liatrio-exercise-docker:$TIME_NOW
+          docker tag git-image conormgomes/liatrio-exercise-docker:latest
+          docker push conormgomes/liatrio-exercise-docker:latest
 
       - name: Run js code to open endpoint
         run: docker run -dp 172.17.0.1:80:80 git-image
