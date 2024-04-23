@@ -46,3 +46,10 @@ Added lines to actually run the js code in actions.
 Took a few tries, but I eventually landed on the correct way to get the endpoint up and running.
 
 Changing the actions .yaml again to use version of the apprentice-action without the unimplemented test.
+
+
+**4/24/24**
+
+Deployed Docker Hub image to Google Cloud Run (https://liatrio-exercise-zmrw3oby5a-uw.a.run.app/)
+
+Testing strategies for automatic deployment of new images
