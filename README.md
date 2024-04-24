@@ -53,3 +53,5 @@ Changing the actions .yaml again to use version of the apprentice-action without
 Deployed Docker Hub image to Google Cloud Run (https://liatrio-exercise-zmrw3oby5a-uw.a.run.app/)
 
 Testing strategies for automatic deployment of new images
+- Just using a constant Docker image tag wasn't enough, Cloud Run is still running older version.
+- Added actions to run Google Cloud CLI and was able to authenticate and deploy revisions that way
