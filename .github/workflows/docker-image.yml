@@ -47,4 +47,4 @@ jobs:
 
       - name: Deploy Revision to Google Cloud Run
         run: |
-          gcloud run deploy liatrio-exercise --image docker.io/conormgomes/liatrio-exercise-docker:$TIME_NOW
+          gcloud run deploy liatrio-exercise --image docker.io/conormgomes/liatrio-exercise-docker:$TIME_NOW --region us-west1
