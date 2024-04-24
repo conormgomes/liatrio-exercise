@@ -41,8 +41,8 @@ jobs:
       - name: Authenticate Google Cloud
         uses: google-github-actions/auth@v2
         with:
-          service_account: ${{secret.GCLOUD_EMAIL}}
-          credentials_json: ${{secret.GCLOUD_KEY}}
+          service_account: ${{secrets.GCLOUD_EMAIL}}
+          credentials_json: ${{secrets.GCLOUD_KEY}}
           project_id: liatrio-exercise-cloud
 
       - name: Deploy Revision to Google Cloud Run
