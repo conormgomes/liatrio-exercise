@@ -37,9 +37,12 @@ jobs:
 
       - name: Install Google Cloud CLI
         uses: google-github-actions/setup-gcloud@v2
+      
+      - name: Authenticate Google Cloud
+        uses: google-github-actions/auth@v2
         with:
-          service_account_email: ${{secret.GCLOUD_EMAIL}}
-          service_account_key: ${{secret.GCLOUD_KEY}}
+          service_account: ${{secret.GCLOUD_EMAIL}}
+          credentials_json: ${{secret.GCLOUD_KEY}}
           project_id: liatrio-exercise-cloud
 
       - name: Deploy Revision to Google Cloud Run
