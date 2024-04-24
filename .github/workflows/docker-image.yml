@@ -35,15 +35,15 @@ jobs:
       - name: Run tests
         uses: liatrio/github-actions/apprentice-action@0b41561cca6822cc8d880fe0e49e7807a41fdf91
 
-      - name: Install Google Cloud CLI
-        uses: google-github-actions/setup-gcloud@v2
-      
       - name: Authenticate Google Cloud
         uses: google-github-actions/auth@v2
         with:
           service_account: ${{secrets.GCLOUD_EMAIL}}
           credentials_json: ${{secrets.GCLOUD_KEY}}
           project_id: liatrio-exercise-cloud
+
+      - name: Install Google Cloud CLI
+        uses: google-github-actions/setup-gcloud@v2
 
       - name: Deploy Revision to Google Cloud Run
         run: |
